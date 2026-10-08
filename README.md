@@ -45,3 +45,8 @@ windows.registry.printkey: Чтение ключей реестра прямо �
 windows.amcache: Анализ артефактов совместимости приложений (что запускалось раньше).
 
 <img width="594" height="966" alt="image" src="https://github.com/user-attachments/assets/4ae33efc-cb32-4ee2-bb40-e81da62c12db" />
+
+Интересное тут использовался | grep= "" чтобы найти процесс по номеру
+
+<img width="2544" height="167" alt="image" src="https://github.com/user-attachments/assets/7018fad8-6884-4dd3-ab03-f4c56a8af4e1" />
+
