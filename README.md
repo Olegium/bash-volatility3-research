@@ -25,15 +25,15 @@ python3 vol.py -f dump.mem windows.plugin
 
 3. Файловая система и объекты
    
-         windows.filescan: Поиск всех файловых объектов в памяти (даже удаленных). Можно найти путь к вредоносному EXE.
+         windows.filescan: Поиск всех файловых объектов в памяти (даже удаленных).
 
          windows.dumpfiles: Извлечение конкретных файлов из памяти по их пути или inode.
 
-         windows.dlllist: Список загруженных DLL для каждого процесса (поиск инъекций).
+         windows.dlllist: Список загруженных DLL для каждого процесса.
 
 4. Вредоносная активность (Malware Hunting)
 
-         windows.malfind: Ищет признаки внедрения кода (RWX память, подписи PE-заголовков внутри чужих процессов). Главный инструмент против руткитов и инжекторов.
+         windows.malfind: Ищет признаки внедрения кода. Главный инструмент против руткитов и инжекторов.
 
          windows.hollowprocesses: Детект техники Process Hollowing (вирус убивает легитимный процесс и заселяет его своим кодом).
 
@@ -41,11 +41,12 @@ python3 vol.py -f dump.mem windows.plugin
 
 5. Реестр и конфигурация
 
-         windows.registry.printkey: Чтение ключей реестра прямо из дампа (например, автозагрузка Run keys).
+         windows.registry.printkey: Чтение ключей реестра прямо из дампа.
 
-         windows.amcache: Анализ артефактов совместимости приложений (что запускалось раньше).
+         windows.amcache: Анализ артефактов совместимости приложений.
 
-         <img width="594" height="966" alt="image" src="https://github.com/user-attachments/assets/4ae33efc-cb32-4ee2-bb40-e81da62c12db" />
+
+<img width="594" height="966" alt="image" src="https://github.com/user-attachments/assets/4ae33efc-cb32-4ee2-bb40-e81da62c12db" />
 
 Интересное тут использовался | grep= "" чтобы найти процесс по номеру
 
