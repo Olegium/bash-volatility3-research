@@ -1,29 +1,35 @@
-# volatility3-
-
-Команда для анализа оперативной памяти 
-
-python3 vol.py -f dump.mem windows.plugin
+# volatility3
 
 
 1. Информация о системе и процесса
-         
+   
          windows.info: Общая информация.
 
          windows.pslist: Список активных процессов.   
 
          windows.pstree: Дерево процессов.
 
+_____________________
+   Пример работы windows.pstee         1ая - колонна процесс 2ая - его родитель
+
+   python vol.py -f /.../MemoryDump.mem windows.pstree
+
+
+   <img width="249" height="148" alt="image" src="https://github.com/user-attachments/assets/d476edd3-747e-4091-b35c-032e03d2a32b" />
+
+____________________
+
          windows.psscan: Сканирование памяти на наличие "мертвых" или скрытых процессов.
 
          windows.cmdline: Показывает командную строку процесса.
 
-2. Сетевой анализ
+1. Сетевой анализ
 
          windows.netscan: Показывает все TCP/UDP соединения, порты, IP-адреса и PID владельца.
 
          windows.netstat: Более детальный разбор сетевых стеков.
 
-3. Файловая система и объекты
+2. Файловая система и объекты
    
          windows.filescan: Поиск всех файловых объектов в памяти (даже удаленных).
 
@@ -31,7 +37,7 @@ python3 vol.py -f dump.mem windows.plugin
 
          windows.dlllist: Список загруженных DLL для каждого процесса.
 
-4. Вредоносная активность (Malware Hunting)
+3. Вредоносная активность (Malware Hunting)
 
          windows.malfind: Ищет признаки внедрения кода. Главный инструмент против руткитов и инжекторов.
 
@@ -39,7 +45,7 @@ python3 vol.py -f dump.mem windows.plugin
 
          windows.suspicious_threads: Поиск потоков, работающих в подозрительной памяти.
 
-5. Реестр и конфигурация
+4. Реестр и конфигурация
 
          windows.registry.printkey: Чтение ключей реестра прямо из дампа.
 
